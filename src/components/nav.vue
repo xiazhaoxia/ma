@@ -1,13 +1,16 @@
 <template>
 
-  <div id="nav">
+  <div id="nav" class="layout">
 
-    <li><img src="../assets/img/logo.png"/></li>
-    <li><router-link to="/">首页</router-link></li>
-    <li><router-link to="/product">产品中心</router-link></li>
-    <li><router-link to="/solution">解决方案</router-link></li>
-    <li><router-link to="/news">新闻资讯</router-link></li>
-    <li><router-link to="/about">关于我们</router-link></li>
+    <img src="../assets/img/logo.png" />
+    <ul>
+      <li><router-link to="/">首页</router-link></li>
+      <li><router-link to="/product">产品中心</router-link></li>
+      <li><router-link to="/solution">解决方案</router-link></li>
+      <li><router-link to="/news">新闻资讯</router-link></li>
+      <li><router-link to="/about">关于我们</router-link></li>
+    </ul>
+
   </div>
 </template>
 <script>
@@ -19,26 +22,32 @@
 <style>
   #nav{
     color:#666;
-    display:flex;
+    display: flex;
     flex-direction: row;
     background-color: white;
-    justify-content: center;
     height:56px;
-    line-height: 56px;
-    vertical-align: middle;
+
     font-size:16px;
     width:1000px;
-    margin:40px auto;
+
+
+
   }
-  #nav li{
+
+  #nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     flex:1;
   }
 
-  #nav li img{
+  #nav img{
     width:290px;
     height:46px;
-    margin: 5px;
-
+    vertical-align: middle;
+    margin: 5px 0px;
+    flex-grow: 0 0 auto;
   }
 
   #nav a:link,

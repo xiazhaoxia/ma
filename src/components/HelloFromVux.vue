@@ -144,15 +144,7 @@ export default {
     width:48px;
     display: inline-block;
   }
-  .fs36{
-    font-size:36px;
-  }
-  .fs24{
-    font-size:24px;
-  }
-  .mt24{
-    margin-top:24px;
-  }
+
   .content{
     display:flex;
     flex-direction: row;
@@ -229,12 +221,5 @@ export default {
     width:308px;
   }
 
-  .mt72{
-    margin-top:72px;
-  }
-
-  .mt48{
-    margin-top: 48px;
-  }
 
 </style>
