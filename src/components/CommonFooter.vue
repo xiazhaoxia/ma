@@ -16,8 +16,8 @@
 
 <style>
   .footer{
-    height: 40px;
-    line-height: 40px;
+    height: 48px;
+    line-height: 48px;
     vertical-align: middle;
     text-align: center;
     background-color: #000;
@@ -25,5 +25,6 @@
     font-weight: bold;
     text-align: center;
     margin-top: 72px;
+    font-size: 14px;
   }
 </style>

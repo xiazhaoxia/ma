@@ -76,4 +76,14 @@ body {
     line-height: 30px;
     vertical-align: middle;
   }
+
+h3{
+  display: inline-block;
+  border-left:2px solid #4b7fe5;
+  font-size: 18px;
+  padding:0px 24px;
+  font-weight: normal;
+  color: #454545;
+
+}
 </style>
