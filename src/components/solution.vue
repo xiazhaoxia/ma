@@ -4,7 +4,6 @@
     <CommonHeader></CommonHeader>
     <div id="main">
 
-
       <div>
 
         <swiper :show-dots="false"  auto height="720px" v-model="swiperItemIndex" >
@@ -19,8 +18,6 @@
             </tab>
 
         </div>
-
-
 
         <!--<div class="tab">-->
           <!--<x-button v-for="(item,index) in list" @click.native="swiperItemIndex = index">{{item.title}}</x-button>-->
@@ -51,30 +48,41 @@
       XButton,
       SwiperItem
     },
+
     data () {
       return {
         msg: '解决方案',
-        swiperItemIndex: 1,
-        list: [{
-          url: 'javascript:',
-          img: '../static/img/tunnel_a.png',
-          title: '定位方案'
-        }, {
-          url: 'javascript:',
-          img: '../static/img/tunnel_b.png',
-          title: '系统架构',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
-        }, {
-          url: 'javascript:',
-          img: '../static/img/tunnel_c.png',
-          title: '网络部署',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
-        }, {
-          url: 'javascript:',
-          img: '../static/img/tunnel_d.png',
-          title: '软件功能',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
-        }]
+        swiperItemIndex: 1
+      }
+    },
+    computed: {
+      list () {
+        let allsolutions = {
+          '1': [],
+          '2': [],
+          '3': [{
+            url: 'javascript:',
+            img: '../static/img/tunnel_a.png',
+            title: '定位方案'
+          }, {
+            url: 'javascript:',
+            img: '../static/img/tunnel_b.png',
+            title: '系统架构',
+            fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          }, {
+            url: 'javascript:',
+            img: '../static/img/tunnel_c.png',
+            title: '网络部署',
+            fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          }, {
+            url: 'javascript:',
+            img: '../static/img/tunnel_d.png',
+            title: '软件功能',
+            fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          }]
+
+        }
+        return allsolutions[this.$route.params.id]
       }
     }
   }

@@ -16,7 +16,7 @@
 <script>
   import mynav from './nav.vue'
   export default{
-    name: 'footer',
+    name: 'homefooter',
     components: {
       mynav
     },

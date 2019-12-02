@@ -22,7 +22,7 @@ const routes = [{
   path: '/product',
   component: Product
 }, {
-  path: '/solution',
+  path: '/solution/:id',
   component: Solution
 }, {
   path: '/news',
