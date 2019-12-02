@@ -38,6 +38,7 @@
     top:40px;
     left:50%;
     transform: translateX(-50%);
+    z-index:99;
   }
 
   .head{
