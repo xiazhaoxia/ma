@@ -6,8 +6,8 @@
     <ul>
       <li><router-link to="/">首页</router-link></li>
       <li><router-link to="/product">产品中心</router-link></li>
-      <li class="wrap"><a>解决方案</a>
-        <ul>
+      <li class="wrap" @click="showToggle()"><a>解决方案</a>
+        <ul v-show="isShowSubItem">
           <li>
             <router-link to="/solution/1">智慧工厂</router-link>
           </li>
@@ -27,7 +27,17 @@
 </template>
 <script>
   export default {
-    name: 'mynav'
+    name: 'mynav',
+    data () {
+      return {
+        isShowSubItem: false
+      }
+    },
+    methods: {
+      showToggle () {
+        this.isShowSubItem = !this.isShowSubItem
+      }
+    }
   }
 </script>
 
@@ -81,7 +91,7 @@
   #nav .wrap ul{
     width:120px;
     position: absolute;
-    left:-50%;
+    left:calc(2px - 50%);
     top:40px;
     flex-direction: column;
     display: flex;
