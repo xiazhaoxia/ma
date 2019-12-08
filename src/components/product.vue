@@ -3,14 +3,15 @@
     <CommonHeader :title="title" :headlines="headlines"></CommonHeader>
     <div class="main layout">
       <div v-for="item in products" class="item">
+        
           <img :src="item.pic"/>
-        <div>
+        <div v-show=" item.name !=''">
           <h3>{{item.name}}</h3>
           <div class="content fs14 color-666">
             <li>型号：{{item.type}}</li>
             <li>额定功率：{{item.type}}</li>{{item.type}}
             <li>类型：{{item.leixing}}</li>
-            <li>覆盖范围{{item.fanwei}}</li>
+            <li>覆盖范围:{{item.fanwei}}</li>
             <li>尺寸：{{item.chicun}}</li>
             <li>工作温度：{{item.wendu}}</li>
             <li>数据接口：{{item.jiekou}}</li>
@@ -44,8 +45,10 @@
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
+          {name: '', pic: '', type: '', gongdian: '', leixing: '', gonglv: '', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
-          {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
+           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
+            {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''},
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100', gongdian: 'dfasdf', leixing: 'dfasdf', gonglv: '123', biaozhi: '', fanwei: '', chicun: '', wendu: '', jiekou: '', dengji: ''}
         ]
       }

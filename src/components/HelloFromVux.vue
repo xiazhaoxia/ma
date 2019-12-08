@@ -198,7 +198,11 @@ export default {
 
   }
   .banner h3{
+    line-height: 24px;
     font-size: 24px;
+    color: #fff;
+    display: block;
+    border-left:none;
   }
   .banner .product{
 
