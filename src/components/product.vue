@@ -3,8 +3,8 @@
     <CommonHeader :title="title" :headlines="headlines"></CommonHeader>
     <div class="main layout">
       <div v-for="item in products" class="item">
-        
-          <img :src="item.pic"/>
+
+        <img :src="item.pic"/>
         <div v-show=" item.name !=''">
           <h3>{{item.name}}</h3>
           <div class="content fs14 color-666">
@@ -88,6 +88,9 @@
   #product .main .item h3{
     margin:24px 0px;
     font-weight: 500;
+    border-left: 3px solid #4b7fe5;
+    line-height: 18px;
+    font-size: 18px;
   }
 
   #product .main .item .content{
