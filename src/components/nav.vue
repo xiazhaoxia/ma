@@ -6,7 +6,7 @@
     <ul>
       <li><router-link to="/">首页</router-link></li>
       <li><router-link to="/product">产品中心</router-link></li>
-      <li class="wrap"><a>解决方案</a>
+      <li class="wrap"><a>解决方案
         <ul>
           <li>
             <router-link to="/solution/1">智慧工厂</router-link>
@@ -18,6 +18,7 @@
             <router-link to="/solution/3">矿井隧道</router-link>
           </li>
         </ul>
+      </a>
       </li>
       <li><router-link to="/news">新闻资讯</router-link></li>
       <li><router-link to="/about">关于我们</router-link></li>
@@ -72,6 +73,17 @@
     color:#4b7fe5;
     cursor:pointer;
   }
+  #nav .wrap a ul{
+    display: none;
+  }
+
+  #nav .wrap a:hover ul,
+  #nav .wrap a:active ul{
+    display: block;
+  }
+
+
+
   li{
     list-style-type: none;
   }
@@ -81,7 +93,7 @@
   #nav .wrap ul{
     width:120px;
     position: absolute;
-    left:-50%;
+    left:calc(2px - 50%);
     top:40px;
     flex-direction: column;
     display: flex;
@@ -92,4 +104,6 @@
   #nav .wrap li{
     height: 40px;
   }
+
+
 </style>
