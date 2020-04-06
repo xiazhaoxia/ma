@@ -6,7 +6,7 @@
       <div class="address">
         <li>电话：400000000</li>
         <li>邮箱：888888@163.com</li>
-        <li>地址：发送地方暗示法阿斯顿发阿斯顿发阿斯顿发阿斯顿发阿斯顿发缩放</li>
+        <li>地址：天津市武清开发区创业总部基地B11号</li>
       </div>
     </div>
     <div class="version">{{version}}</div>

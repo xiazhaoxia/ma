@@ -68,14 +68,14 @@ export default {
       // its initial state.
       msg: 'Hello World!',
       items: [
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'},
-        {icon: '../assets/img/location.png', title: '定位精度高', content: '定位精度高定位精度高定位精度高定位精度高定位精度高定位精度高'}
+        {icon: '../assets/img/location.png', title: '定位精度高', content: 'UWB高精度厘米级定位，定位精度最高10cm'},
+        {icon: '../assets/img/label.png', title: '覆盖范围广', content: '基站覆盖半径大，间距可达100米，数量少，成本低'},
+        {icon: '../assets/img/signal.png', title: '标签容量大', content: '最小区域内可容纳1000张标签，整个系统无上限，易拓展'},
+        {icon: '../assets/img/install.png', title: '便于系统集成', content: '丰富的API接口免费提供，支持二次开发'},
+        {icon: '../assets/img/screen.png', title: '多屏便捷查看', content: '用任意电脑/手机/PAD均可查看，无需客户端，浏览器访问'},
+        {icon: '../assets/img/cloud.png', title: '云端定位引擎', content: '支持云端定位引擎，无需本地安装服务器，部署便捷，成本低'},
+        {icon: '../assets/img/phone.png', title: '手机查看定位', content: '使用手机扫码即可查看定位信息，方便快捷'},
+        {icon: '../assets/img/function.png', title: '远程维护升级', content: '基站和标签支持远程升级，便于调试和扩展功能'}
 
       ]
     }
