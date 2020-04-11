@@ -35,9 +35,9 @@
           <h3>解决方案</h3>
           <div class="line"></div>
           <ul class="mt72 middle-banner">
-            <li><img src="../assets/img/home_a.png"/><span>智慧工业</span></li>
-            <li><img src="../assets/img/home_b.png"/><span>智慧狱所</span></li>
-            <li><img src="../assets/img/home_c.png"/><span>矿井隧道</span></li>
+            <li><img src="../assets/img/home_a.png" @click="goSolutions(1)"/><span>智慧工业</span></li>
+            <li><img src="../assets/img/home_b.png" @click="goSolutions(2)"/><span>智慧狱所</span></li>
+            <li><img src="../assets/img/home_c.png" @click="goSolutions(3)"/><span>矿井隧道</span></li>
           </ul>
 
         </div>
@@ -59,6 +59,11 @@ export default {
     Cell,
     mynav,
     myfooter
+  },
+  methods: {
+    goSolutions (id) {
+      this.$router.push(`/solution/${id}`)
+    }
   },
   data () {
     return {
