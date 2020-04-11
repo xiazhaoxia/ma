@@ -44,7 +44,9 @@
       </div>
     </div>
 
-    <myfooter></myfooter>
+    <myfooter>
+      <slot name="contact"></slot>
+    </myfooter>
 
   </div>
 </template>

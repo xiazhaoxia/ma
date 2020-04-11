@@ -8,7 +8,7 @@
         <!--{{item.title}}-->
         <!--<img :src="item.img"/>-->
       <!--</li>-->
-      <div>
+      <div class="myswiper">
 
         <swiper :show-dots="false"  auto height="720px" v-model="swiperItemIndex" >
           <swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
@@ -170,7 +170,9 @@
     margin-top:0;
   }
 
-
+  .myswiper{
+    height:calc(100vh-104px);
+  }
 
 
 </style>

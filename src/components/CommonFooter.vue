@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="common-footer">
    我是公司的备案信息
   </footer>
 </template>
@@ -15,7 +15,7 @@
 </script>
 
 <style>
-  .footer{
+  .common-footer{
     height: 48px;
     line-height: 48px;
     vertical-align: middle;

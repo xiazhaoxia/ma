@@ -21,12 +21,9 @@
       </li>
       <li><router-link to="/news">新闻资讯</router-link></li>
       <li><router-link to="/about">关于我们</router-link></li>
-      <li>
-        <div class="header-tel ml5">
-          <span>咨询微信/电话</span>
-          <span class="color-orange fs18 fw600">12811111111</span>
-        </div>
-      </li>
+      <slot name="contact">
+
+      </slot>
     </ul>
 
   </div>
