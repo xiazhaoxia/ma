@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="topbar"> <mynav></mynav></div>
+    <div class="topbar"> <CommonHeader></CommonHeader></div>
 
     <div class="header">
 
@@ -53,13 +53,13 @@
 
 <script>
 import { Group, Cell } from 'vux'
-import mynav from './nav.vue'
+import CommonHeader from './CommonHeader'
 import myfooter from './footer.vue'
 export default {
   components: {
     Group,
     Cell,
-    mynav,
+    CommonHeader,
     myfooter
   },
   methods: {

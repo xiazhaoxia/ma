@@ -21,9 +21,7 @@
       </li>
       <li><router-link to="/news">新闻资讯</router-link></li>
       <li><router-link to="/about">关于我们</router-link></li>
-      <slot name="contact">
-
-      </slot>
+      <slot></slot>
     </ul>
 
   </div>
