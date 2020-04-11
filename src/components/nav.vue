@@ -2,8 +2,8 @@
 
   <div id="nav" class="layout">
 
-    <img src="../assets/img/logo.png" />
-    <ul>
+    <img src="../assets/img/logo.png"/>
+    <ul class="ml5">
       <li><router-link to="/">首页</router-link></li>
       <li><router-link to="/product">产品中心</router-link></li>
       <li class="wrap" @click="showToggle()"><a>解决方案</a>
@@ -21,6 +21,12 @@
       </li>
       <li><router-link to="/news">新闻资讯</router-link></li>
       <li><router-link to="/about">关于我们</router-link></li>
+      <li>
+        <div class="header-tel ml5">
+          <span>咨询微信/电话</span>
+          <span class="color-orange fs18 fw600">12811111111</span>
+        </div>
+      </li>
     </ul>
 
   </div>
@@ -43,16 +49,13 @@
 
 <style>
   #nav{
-    color:#666;
+
     display: flex;
     flex-direction: row;
-    background-color: white;
     height:56px;
-
+    background-color: transparent;
+    margin:0 auto;
     font-size:16px;
-    width:1000px;
-
-
 
   }
 
@@ -113,4 +116,12 @@
   #nav .wrap li{
     height: 40px;
   }
+
+  #nav .header-tel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
 </style>

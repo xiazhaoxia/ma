@@ -13,6 +13,7 @@ export default {
 <style lang="less">
 @import '~vux/src/styles/reset.less';
 
+
 body {
   background-color: #fbf9fe;
 }
@@ -38,6 +39,9 @@ body {
   }
   .fs24{
     font-size:24px;
+  }
+  .fw600{
+    font-weight: 600;
   }
 
   .mt16{
@@ -70,11 +74,24 @@ body {
   .color-666{
     color:#666;
   }
+  .color-orange{
+    color:orange;
+  }
 
   .lh30{
     height: 30px;
     line-height: 30px;
     vertical-align: middle;
+  }
+
+  .mr2{
+    margin-right:2rem;
+  }
+  .ml2{
+    margin-left:2rem;
+  }
+  .ml5{
+    margin-left:5rem;
   }
 
 h3{
@@ -85,5 +102,20 @@ h3{
   font-weight: normal;
   color: #454545;
 
+}
+
+.topbar{
+  /*position: absolute;*/
+  /*top:40px;*/
+  /*left:50%;*/
+  /*transform: translateX(-50%);*/
+  /*z-index:99;*/
+  width: 100%;
+  font-size: 1.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(255,255,255,0.8);
 }
 </style>

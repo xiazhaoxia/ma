@@ -34,10 +34,10 @@
         <div class="product">
           <h3>解决方案</h3>
           <div class="line"></div>
-          <ul class="mt72">
-            <li><img src="../assets/img/home_a.png"/></li>
-            <li><img src="../assets/img/home_b.png"/></li>
-            <li><img src="../assets/img/home_c.png"/></li>
+          <ul class="mt72 middle-banner">
+            <li><img src="../assets/img/home_a.png"/><span>智慧工业</span></li>
+            <li><img src="../assets/img/home_b.png"/><span>智慧狱所</span></li>
+            <li><img src="../assets/img/home_c.png"/><span>矿井隧道</span></li>
           </ul>
 
         </div>
@@ -90,17 +90,7 @@ export default {
 
 
   }
-  .topbar{
-    width:1000px;
-    position: relative;
-    margin:0 auto;
 
-  }
-  .topbar #nav{
-    position: absolute;
-    top: 40px;
-    left:0px;
-  }
 
   .header{
     background: url("../assets/img/banner.png") no-repeat center center;
@@ -224,6 +214,20 @@ export default {
     height: 392px;
     width:308px;
   }
-
+  .middle-banner li{
+    position: relative;
+  }
+  .middle-banner li span{
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    transform: translate(-50%,-50%);
+    padding:5px;
+  }
 
 </style>

@@ -49,10 +49,23 @@
 
         <div class="content mt48">
           <h3>联系我们</h3>
-          <div class="location">
-            <div v-for="item in location">
-              <span>{{item.location}}</span>
-              <img :src="item.baiduUrl"/>
+          <!--<div class="location">-->
+            <!--<div v-for="item in location">-->
+              <!--<span>{{item.location}}</span>-->
+              <!--<img :src="item.baiduUrl"/>-->
+            <!--</div>-->
+          <!--</div>-->
+          <div class="contact_us">
+            <div class="contact_map">
+              <img src="../../static/img/map.png"/>
+            </div>
+            <div class="contact_tell_type">
+              <p><a href="geopoint:116.504547,39.981501"><img src="../../static/img/home_about.png" alt="">地址： 北京市朝阳区酒仙桥东路9号院A2楼西门6层</a> </p>
+              <p><a href="mailto:bd@ubitraq.com"><img src="../../static/img/message_about.png" alt="">商务： bd@ubitraq.com</a></p>
+              <p><a href="mailto:hr@ubitraq.com"><img src="../../static/img/message_about.png" alt="">应聘： hr@ubitraq.com</a></p>
+              <p><a href="mailto:yxdu@ubitraq.com"><img src="../../static/img/message_about.png" alt="">其他： yxdu@ubitraq.com</a></p>
+              <p id="all_tel_phone" class="business_tel"><img src="../../static/img/tel_about.png" alt=""><a href="tel:13811504013">13811504013&nbsp;(商务，其它)</a><br>
+              </p>
             </div>
           </div>
         </div>
@@ -169,5 +182,33 @@
   }
   .address{
     width:90%;
+  }
+
+  .contact_us {
+    margin-top:20px;
+    width:100%;
+    padding:56px 0 72px 0;
+  }
+  .contact_us .contact_map {
+    width: 100%;
+    height: 400px;
+  }
+  .contact_us .contact_tell_type {
+    width: 100%;
+    margin: 36px 0 0 0;
+  }
+  .contact_us .contact_tell_type  p {
+    line-height: 0;
+    margin-bottom: 20px;
+  }
+  .contact_us .contact_tell_type  p img {
+    margin-right: 24px;
+    vertical-align: middle;
+  }
+  .contact_tell_type p a {
+    color: #666;
+  }
+  .contact_map img{
+    width:100%;
   }
 </style>
