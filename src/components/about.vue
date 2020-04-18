@@ -9,7 +9,7 @@
 
           <img src="../assets/img/aboutus.png" class="mt16"/>
           <p class="btntitle color-666 fs14 mt36">公司简介</p>
-          <p class="btntitle color-666 fs14 mt16">我们的优势</p>
+          <p class="btntitle color-666 fs14 mt16">公司优势</p>
 
           <div class="aboutus mt72"><img src="../assets/img/call.png"/> <span class="fs18 color-blue">联系我们</span></div>
 
@@ -41,9 +41,11 @@
 
 
           <div>
-            <b>我们的优势</b>
+            <b>公司优势</b>
 
-            给5G贴上政治标签，是人为切断了跨境流动、惠及全世界的创新福祉。“如果我们切断彼此间的联系，并禁止技术交流，
+            1.业界首个厘米级精度手机室内定位方案，专利技术，比传统WIFI/蓝牙定位精度高一个量级。</br>
+            2.多项原创技术，产品适用性广，扩展性强，性价比高。</br>
+            3.丰富的行业成功案例，覆盖多领域，多个行业。</br>
           </div>
         </div>
 
@@ -57,7 +59,7 @@
           <!--</div>-->
           <div class="contact_us">
             <div class="contact_map">
-              <img src="../../static/img/map.png"/>
+              
             </div>
             <div class="contact_tell_type">
               <p><a href="geopoint:116.504547,39.981501"><img src="../../static/img/home_about.png" alt="">地址： 北京市朝阳区酒仙桥东路9号院A2楼西门6层</a> </p>
@@ -90,7 +92,7 @@
         title: '关于我们',
         headline: '更准确的室内定位',
         location: [
-          {location: '北京办事处：', address: ' 北京市丰台区汉威国际二区7号楼5层', baiduUrl: '../static/img/logo.png'},
+          {location: '北京分部：', address: ' 北京市丰台区华夏幸福创新中心B座6层', baiduUrl: '../static/img/logo.png'},
           {location: '天津总部：', address: ' 天津市武清开发区创业总部基地B11号', baiduUrl: '../static/img/logo.png'}
         ],
         contacts: ['微信：888888', '邮箱:xiazhaoxia@111.com']
