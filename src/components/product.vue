@@ -5,7 +5,7 @@
       <div class="item">
 
         <img src="@/assets/img/aa.png"/>
-        <div> 
+        <div>
           <h3>室内基站</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-AE</li>
@@ -17,7 +17,7 @@
             <li>供电：12VDC/PoE</li>
             <li>数据接口：WIFI/网线/4G</li>
             <li>防护等级：IP50(不防水)</li>
-            
+
 
           </div>
         </div>
@@ -25,7 +25,7 @@
       <div class="item">
 
         <img src="@/assets/img/bb.png"/>
-        <div> 
+        <div>
           <h3>室外基站</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-ALI/AEI</li>
@@ -37,7 +37,7 @@
             <li>供电：12VDC/PoE</li>
             <li>数据接口：WIFI/网线/4G</li>
             <li>防护等级：IP65(防尘防水)</li>
-            
+
 
           </div>
         </div>
@@ -45,7 +45,7 @@
       <div class="item">
 
         <img src="@/assets/img/cc.png"/>
-        <div> 
+        <div>
           <h3>防爆型基站</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-AEX</li>
@@ -57,19 +57,19 @@
             <li>供电：12VDC/PoE</li>
             <li>数据接口：WIFI/网线/4G</li>
             <li>防护等级：IP65(防尘防水)</li>
-            
+
 
           </div>
         </div>
       </div>
       <div class="item">
 
-         
+
       </div>
       <div class="item">
 
         <img src="@/assets/img/dd.png"/>
-        <div> 
+        <div>
           <h3>卡片型标签</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-TA</li>
@@ -81,7 +81,7 @@
             <li>供电：可充电锂电池</li>
             <li>其它：SOS按键、LED、蜂鸣器、震动提示(可选)</li>
             <li>电池续航：＞半年充电(1Hz)</li>
-            
+
 
           </div>
         </div>
@@ -89,7 +89,7 @@
       <div class="item">
 
         <img src="@/assets/img/ee.png"/>
-        <div> 
+        <div>
           <h3>资产型标签</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-TB/li>
@@ -101,7 +101,7 @@
             <li>供电：可充电锂电池</li>
             <li>其它：SOS按键、LED、蜂鸣器、震动提示(可选)</li>
             <li>电池续航：＞半年充电(1Hz)</li>
-            
+
 
           </div>
         </div>
@@ -109,7 +109,7 @@
       <div class="item">
 
         <img src="@/assets/img/ff.png"/>
-        <div> 
+        <div>
           <h3>轻巧型标签</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-TC/li>
@@ -121,7 +121,7 @@
             <li>供电：一次性电池/磁吸充电</li>
             <li>其它：LED</li>
             <li>电池续航：＞5年免维护(5分钟1次)/1月充电(1Hz)</li>
-            
+
 
           </div>
         </div>
@@ -129,7 +129,7 @@
       <div class="item">
 
         <img src="@/assets/img/gg.png"/>
-        <div> 
+        <div>
           <h3>腕表型标签</h3>
           <div class="content fs14 color-666">
             <li>型号：UT100-TW/li>
@@ -141,12 +141,12 @@
             <li>供电：可充电锂电池</li>
             <li>其它：SOS按键、LED</li>
             <li>电池续航：＞3个月充电(1Hz)</li>
-            
+
 
           </div>
         </div>
       </div>
-      
+
     </div>
     <CommonFooter></CommonFooter>
   </div>
@@ -225,6 +225,7 @@
     border-top:1px solid #bababa;
     justify-content: space-between;
     padding: 18px 0px;
+    margin-top:0;
   }
 
   #product .main .item .content li{

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" id="home">
     <div class="topbar"> <CommonHeader></CommonHeader></div>
 
     <div class="header">
@@ -91,11 +91,11 @@ export default {
 </script>
 
 <style>
+  #home .head{
+    min-height:0px;
+  }
   .wrap{
-
     text-align: center;
-
-
   }
 
 
@@ -112,6 +112,7 @@ export default {
     color:white;
 
   }
+
 
 
 

@@ -2,26 +2,26 @@
 
   <div class="solution" id="solution">
     <CommonHeader></CommonHeader>
-    <div id="main">
+    <div id="main" class="main">
 
       <!--<li v-for="item in this.allsolutions">-->
         <!--{{item.title}}-->
         <!--<img :src="item.img"/>-->
       <!--</li>-->
       <div class="myswiper">
+        <div  class="solution-tabbar">
 
+          <tab v-model="swiperItemIndex" class="solution-tab layout fs16 color-fff" bar-active-color="#fbaa34" active-color="#fbaa34">
+            <tab-item class="f" :selected="index==swiperItemIndex" v-for="(item, index) in allsolutions" @click="swiperItemIndex = index" :key="index">{{item.title}}</tab-item>
+          </tab>
+
+        </div>
         <swiper :show-dots="false"  auto height="720px" v-model="swiperItemIndex" >
           <swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
             <x-img :src="item.img" ></x-img>
           </swiper-item>
         </swiper>
-        <div  class="solution-tabbar">
 
-            <tab v-model="swiperItemIndex" class="solution-tab layout fs16 color-fff" bar-active-color="#fbaa34" active-color="#fbaa34">
-              <tab-item class="f" :selected="index==swiperItemIndex" v-for="(item, index) in allsolutions" @click="swiperItemIndex = index" :key="index">{{item.title}}</tab-item>
-            </tab>
-
-        </div>
 
         <!--<div class="tab">-->
           <!--<x-button v-for="(item,index) in list" @click.native="swiperItemIndex = index">{{item.title}}</x-button>-->
@@ -165,13 +165,17 @@
     display:none;
   }
 
+  #solution .main{
+    margin:60px auto 0;
+  }
 
   .solution .footer{
     margin-top:0;
   }
 
   .myswiper{
-    height:calc(100vh-104px);
+    width:100%;
+    height: auto;
   }
 
 

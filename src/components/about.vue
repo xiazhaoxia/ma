@@ -14,15 +14,7 @@
           <div class="aboutus mt72"><img src="../assets/img/call.png"/> <span class="fs18 color-blue">联系我们</span></div>
 
           <img src="../assets/img/contactus.png" class="mt16"/>
-          <div class="address column-2 fs14 color-666 mt36" v-for="item in location">
-            <div>{{item.location}}</div>
-            <div>{{item.address}}</div>
-          </div>
-          <div class="mt30">
-            <p v-for="item in contacts" class="fs14 color-666 lh30">
-              {{item}}
-            </p>
-          </div>
+
         </div>
       </div>
       <div class="right">
@@ -59,14 +51,15 @@
           <!--</div>-->
           <div class="contact_us">
             <div class="contact_map">
-              
+              <img src="@/assets/img/map.png"/>
             </div>
-            <div class="contact_tell_type">
-              <p><a href="geopoint:116.504547,39.981501"><img src="../../static/img/home_about.png" alt="">地址： 北京市朝阳区酒仙桥东路9号院A2楼西门6层</a> </p>
-              <p><a href="mailto:bd@ubitraq.com"><img src="../../static/img/message_about.png" alt="">商务： bd@ubitraq.com</a></p>
-              <p><a href="mailto:hr@ubitraq.com"><img src="../../static/img/message_about.png" alt="">应聘： hr@ubitraq.com</a></p>
-              <p><a href="mailto:yxdu@ubitraq.com"><img src="../../static/img/message_about.png" alt="">其他： yxdu@ubitraq.com</a></p>
-              <p id="all_tel_phone" class="business_tel"><img src="../../static/img/tel_about.png" alt=""><a href="tel:13811504013">13811504013&nbsp;(商务，其它)</a><br>
+            <div class="address column-2 fs14" v-for="item in location">
+              <div>{{item.location}}</div>
+              <div>{{item.address}}</div>
+            </div>
+            <div class="mt30">
+              <p v-for="item in contacts" class="fs14 lh30">
+                {{item}}
               </p>
             </div>
           </div>
@@ -184,12 +177,12 @@
   }
   .address{
     width:90%;
+    margin-top: 10px;
   }
 
   .contact_us {
     margin-top:20px;
     width:100%;
-    padding:56px 0 72px 0;
   }
   .contact_us .contact_map {
     width: 100%;
@@ -211,6 +204,8 @@
     color: #666;
   }
   .contact_map img{
-    width:100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 </style>
