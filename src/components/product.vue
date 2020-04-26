@@ -183,7 +183,7 @@
 </script>
 
 <style>
-  .product{
+  #product {
     display: flex;
     flex-flow: column nowrap;
     background: url("../assets/img/product_banner.png") no-repeat;
@@ -233,6 +233,7 @@
       line-height: 30px;
       height: 30px;
       vertical-align: middle;
+      align-items: flex-start;
   }
 
 

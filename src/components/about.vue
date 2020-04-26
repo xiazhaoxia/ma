@@ -11,7 +11,7 @@
           <p class="btntitle color-666 fs14 mt36">公司简介</p>
           <p class="btntitle color-666 fs14 mt16">公司优势</p>
 
-          <div class="aboutus mt72"><img src="../assets/img/call.png"/> <span class="fs18 color-blue">联系我们</span></div>
+          <div class="aboutus mt220"><img src="../assets/img/call.png"/> <span class="fs18 color-blue">联系我们</span></div>
 
           <img src="../assets/img/contactus.png" class="mt16"/>
 
@@ -154,6 +154,9 @@
   }
   .aboutus img{
     margin-right: 10px;
+  }
+  .mt220{
+    margin-top:220px;
   }
   .btntitle{
     width:200px;

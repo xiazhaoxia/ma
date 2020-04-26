@@ -221,6 +221,7 @@ export default {
     flex:1;
     height: 392px;
     width:308px;
+    cursor: pointer;
   }
   .middle-banner li{
     position: relative;
