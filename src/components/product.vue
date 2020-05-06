@@ -165,7 +165,7 @@
     },
     data () {
       return {
-        title: '厘米级高精度定位',
+        title: 'UWB厘米级高精度定位',
         headlines: '运营商级品质、寿命长、成本低',
         products: [
           {name: '室内基站', pic: '../static/img/aa.png', type: 'UT100-AE', gongdian: '12VDC/PoE', leixing: '吸顶型', gonglv: '<3W', biaozhi: '', fanwei: '>100米', chicun: '直径200MM,高45MM', wendu: '-30～70℃', jiekou: 'WIFI/网线/4G', dengji: 'IP50(不防水)'},

@@ -4,8 +4,8 @@
     <div class="navigation">
       <mynav style="flex:4"></mynav>
       <div class="address">
-        <li>电话：400000000</li>
-        <li>邮箱：888888@163.com</li>
+        <li>电话/微信：18510501185</li>
+        <li>邮箱：qihiuwb@163.com</li>
         <li>地址：天津市武清开发区创业总部基地B11号</li>
       </div>
     </div>

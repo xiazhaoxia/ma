@@ -88,7 +88,7 @@
           {location: '北京分部：', address: ' 北京市丰台区华夏幸福创新中心B座6层', baiduUrl: '../static/img/logo.png'},
           {location: '天津总部：', address: ' 天津市武清开发区创业总部基地B11号', baiduUrl: '../static/img/logo.png'}
         ],
-        contacts: ['微信：888888', '邮箱:xiazhaoxia@111.com']
+        contacts: ['微信/手机：18510501185', '邮箱：qihiuwb@163.com']
 
       }
     }
