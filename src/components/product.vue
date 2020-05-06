@@ -234,6 +234,7 @@
       height: 30px;
       vertical-align: middle;
       align-items: flex-start;
+      text-align: left;
   }
 
 
