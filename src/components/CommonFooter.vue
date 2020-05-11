@@ -1,6 +1,6 @@
 <template>
   <footer class="common-footer">
-   我是公司的备案信息
+   © 2020 qhuwb.com. All rights reserved.津ICP备20003187号
   </footer>
 </template>
 
