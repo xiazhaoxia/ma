@@ -39,9 +39,7 @@ export default{
       return {
         newlist: [
           {image: '../static/img/logo.png', title: '新闻标题', content: '我是新闻内容', time: '2019-11-23'},
-          {image: '../static/img/logo.png', title: '新闻标题', content: '我是新闻内容', time: '2019-11-23'},
-          {image: '../static/img/logo.png', title: '新闻标题', content: '我是新闻内容', time: '2019-11-23'},
-          {image: '../static/img/logo.png', title: '新闻标题', content: '我是新闻内容', time: '2019-11-23'}
+          
         ]
 
       }

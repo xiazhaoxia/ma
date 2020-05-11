@@ -35,7 +35,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    document.title = "天津启航物联科技有限公司"
+    document.title = "天津启航物联-UWB定位专家"
     debugger
     next()
   })
