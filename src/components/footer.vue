@@ -9,7 +9,10 @@
         <li>地址：天津市武清开发区创业总部基地B11号</li>
       </div>
     </div>
-    <div class="version">{{version}}</div>
+    <div class="version">
+        <span>© 2020 qhuwb.com All rights reserved.</span>
+        <span><a href="http://www.beian.miit.gov.cn" target="_blank">津ICP备20003187号</a></span>
+    </div>
   </div>
 </template>
 
@@ -23,7 +26,7 @@
     data () {
       return {
         msg: 'I am footer',
-        version: '备案信息'
+        version: ''
       }
     }
   }
@@ -65,4 +68,13 @@
     height:48px;
 
   }
+  .footer .version span{
+      margin-right:10px;
+  }
+  a:hover{
+      cursor: pointer;
+      color: blue;
+  }
+
+  
 </style>

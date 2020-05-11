@@ -1,6 +1,7 @@
 <template>
   <footer class="common-footer">
-   © 2020 qhuwb.com. All rights reserved.津ICP备20003187号
+   <span>© 2020 qhuwb.com. All rights reserved.</span>
+   <span><a href="http://www.beian.miit.gov.cn" target="_blank">津ICP备20003187号</a></span>
   </footer>
 </template>
 
@@ -26,5 +27,8 @@
     text-align: center;
     margin-top: 72px;
     font-size: 14px;
+  }
+  .common-footer span{
+      margin-right:10px;
   }
 </style>

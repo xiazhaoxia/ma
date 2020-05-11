@@ -34,6 +34,12 @@ const router = new VueRouter({
   routes
 })
 
+router.beforeEach((to, from, next) => {
+    document.title = "天津启航物联科技有限公司"
+    debugger
+    next()
+  })
+
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
