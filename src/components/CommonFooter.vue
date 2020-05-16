@@ -31,4 +31,7 @@
   .common-footer span{
       margin-right:10px;
   }
+  .common-footer a{
+    color: #fff;
+  }
 </style>

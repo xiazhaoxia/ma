@@ -71,10 +71,13 @@
   .footer .version span{
       margin-right:10px;
   }
-  a:hover{
+  .footer .version a{
+    color:#999;
+  }
+  .footer .version a:hover{
       cursor: pointer;
-      color: blue;
   }
 
-  
+
+
 </style>

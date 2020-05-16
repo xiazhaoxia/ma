@@ -116,6 +116,6 @@ h3{
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,1);
 }
 </style>
