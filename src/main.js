@@ -35,10 +35,9 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    document.title = "天津启航物联-UWB定位专家"
-    debugger
-    next()
-  })
+  document.title = '天津启航物联-UWB定位专家'
+  next()
+})
 
 FastClick.attach(document.body)
 
