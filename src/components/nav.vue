@@ -70,6 +70,7 @@
     flex-grow: 0 0 auto;
   }
 
+  #nav a,
   #nav a:link,
   #nav a:visited{
     color:#666;
