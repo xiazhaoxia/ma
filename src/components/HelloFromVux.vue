@@ -151,13 +151,17 @@ export default {
 
   }
 
+  #home .content li{
+    margin-bottom: 24px;
+  }
+
   .content li{
     width:250px;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
+
 
   }
   .content li span{
