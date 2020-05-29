@@ -80,21 +80,21 @@
         // 智慧工工厂
         let gongchang = [{
           url: 'javascript:',
-          img: '../static/img/industry_a.png',
+          img: '../static/img/industry_a.jpg',
           title: '定位方案'
         }, {
           url: 'javascript:',
-          img: '../static/img/industry_b.png',
+          img: '../static/img/industry_b.jpg',
           title: '系统架构',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/industry_c.png',
+          img: '../static/img/industry_c.jpg',
           title: '网络部署',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/industry_d.png',
+          img: '../static/img/industry_d.jpg',
           title: '软件功能',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }]
@@ -102,21 +102,21 @@
         // 智慧狱所
         let yusuo = [{
           url: 'javascript:',
-          img: '../static/img/prison_a.png',
+          img: '../static/img/prison_a.jpg',
           title: '定位方案'
         }, {
           url: 'javascript:',
-          img: '../static/img/prison_b.png',
+          img: '../static/img/prison_b.jpg',
           title: '系统架构',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/prison_c.png',
+          img: '../static/img/prison_c.jpg',
           title: '网络部署',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/prison_d.png',
+          img: '../static/img/prison_d.jpg',
           title: '软件功能',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }]
@@ -124,21 +124,21 @@
         // 隧道
         let suidao = [{
           url: 'javascript:',
-          img: '../static/img/tunnel_a.png',
+          img: '../static/img/tunnel_a.jpg',
           title: '定位方案'
         }, {
           url: 'javascript:',
-          img: '../static/img/tunnel_b.png',
+          img: '../static/img/tunnel_b.jpg',
           title: '系统架构',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/tunnel_c.png',
+          img: '../static/img/tunnel_c.jpg',
           title: '网络部署',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }, {
           url: 'javascript:',
-          img: '../static/img/tunnel_d.png',
+          img: '../static/img/tunnel_d.jpg',
           title: '软件功能',
           fallbackImg: 'https://static.vux.li/demo/3.jpg'
         }]
