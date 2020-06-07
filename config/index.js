@@ -64,6 +64,8 @@ module.exports = {
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
+    productionGzip:true,
+    productionGzipExtensions:['js','css','png','vue'],
 
     // Run the build command with an extra argument to
     // View the bundle analyzer report after build finishes:

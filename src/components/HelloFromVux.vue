@@ -143,7 +143,7 @@ export default {
     display: inline-block;
   }
 
-  .content{
+  #home .content{
     display:flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -155,7 +155,7 @@ export default {
     margin-bottom: 24px;
   }
 
-  .content li{
+  #home .content li{
     width:250px;
     text-align: center;
     display:flex;
@@ -164,25 +164,25 @@ export default {
 
 
   }
-  .content li span{
+  #home .content li span{
     display: inline-block;
     width:80%;
     font-size:12px;
   }
 
 
-  .content li span.last{
+  #home .content li span.last{
     height:48px;
     line-height: 24px;
     vertical-align: middle;
   }
 
-  .content li span b3{
+  #home .content li span b3{
     font-size: 14px;
     color:#454545;
   }
 
-  .full-width{
+  #home .full-width{
     /*margin-left:calc(50% - 50vw);*/
     /*left:-50%;*/
     /*margin-top: calc(50% - 50vh);*/
