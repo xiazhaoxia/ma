@@ -1,6 +1,6 @@
 <template>
 
-  <div class="product">
+  <div class="about">
     <CommonHeader :title='title' :headlines='headline'></CommonHeader>
     <div class="main layout">
       <div class="left">
@@ -96,27 +96,27 @@
 </script>
 
 <style>
-  .product{
+  .about{
     display: flex;
     flex-flow: column nowrap;
     background: url("../assets/img/aboutus_banner.png") no-repeat;
     background-size: contain;
   }
 
-  .product .main{
+  .about .main{
     display: flex;
     flex-flow: row nowrap;
     min-height: calc(100vh - 400px);
   }
-  .product .left{
+  .about .left{
     width:270px;
   }
-  .product .right{
+  .about .right{
     width:730px;
   }
 
 
-  .product .right .content{
+  .about .right .content{
     line-height: 26px;
 
     vertical-align: middle;
@@ -125,25 +125,25 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .product .right .content>div{
+  .about .right .content>div{
     margin-top: 30px;
   }
-  .product .right .content b{
+  .about .right .content b{
 
     color: #4b7fe5;
     display:block;
     font-weight: 500;
 
   }
-  .product .right .content .location{
+  .about .right .content .location{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
-  .product .right .content .location span{
+  .about .right .content .location span{
     display: block;
   }
-  .product .right .content .location img{
+  .about .right .content .location img{
     width: 360px;
     height: 224px;
   }

@@ -195,19 +195,19 @@ export default {
   }
 
 
-  .banner{
+  #home  .banner{
     position: relative;
     min-height: 608px;
 
   }
-  .banner h3{
+  #home  .banner h3{
     line-height: 24px;
     font-size: 24px;
     color: #fff;
     display: block;
     border-left:none;
   }
-  .banner .product{
+  #home  .banner .product{
 
     width: 1000px;
     margin:0 auto;
@@ -216,22 +216,22 @@ export default {
     position: absolute;
     top:48px;
   }
-  .banner .product ul{
+  #home  .banner .product ul{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
   }
-  .banner .product ul li{
+  #home .banner .product ul li{
     flex:1;
     height: 392px;
     width:308px;
     cursor: pointer;
   }
-  .middle-banner li{
+  #home .middle-banner li{
     position: relative;
   }
-  .middle-banner li span{
+  #home .middle-banner li span{
     position: absolute;
     z-index: 99;
     left: 50%;
