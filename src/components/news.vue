@@ -38,7 +38,7 @@ export default{
     data () {
       return {
         newlist: [
-          {image: '../static/img/logo.png', title: '新闻标题', content: '我是新闻内容', time: '2019-11-23'}
+          {image: '../static/img/logo.png', title: 'UWB超宽带定位技术应用场景分析', content: 'UWB超宽带定位技术是国际领先的室内定位技术，其定位的稳定性强，精度高的特点可广泛应用于工业，制造业，服务业等各行业。提供精准的位置信息，丰富的数据统计和高效的人员管理，那么具体的场景有哪些呢？', time: '2019-11-23'}
 
         ]
 
