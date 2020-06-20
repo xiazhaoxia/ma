@@ -17,16 +17,12 @@ export default {
 body {
   background-color: #fbf9fe;
 }
+.layout{
+  width:1000px;
+  margin:0 auto;
+}
 
 
-  html{
-    font-size: 62.5%;
-
-  }
-  .layout{
-    width:1000px;
-    margin:0 auto;
-  }
 
   .fs14{
     font-size: 14px;
@@ -85,13 +81,13 @@ body {
   }
 
   .mr2{
-    margin-right:2rem;
+    margin-right:2px;
   }
   .ml2{
-    margin-left:2rem;
+    margin-left:2px;
   }
   .ml5{
-    margin-left:5rem;
+    margin-left:5px;
   }
 
 h3{

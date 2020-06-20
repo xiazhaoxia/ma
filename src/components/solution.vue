@@ -16,7 +16,7 @@
           </tab>
 
         </div>
-        <swiper :show-dots="false"  auto height="720px" v-model="swiperItemIndex" >
+        <swiper :show-dots="false"  auto  v-model="swiperItemIndex" >
           <swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
             <x-img :src="item.img" ></x-img>
           </swiper-item>
@@ -176,6 +176,9 @@
   .myswiper{
     width:100%;
     height: auto;
+  }
+  .vux-swiper{
+    height:720px !important;
   }
 
 

@@ -201,13 +201,16 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
+    flex-wrap: wrap;
+
   }
   #product .main .item{
-    width: 460px;
+    width: 49%;
   }
   #product .main .item img{
     display: block;
     border-radius: 5px;
+    width:100%;
 
   }
 

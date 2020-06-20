@@ -7,13 +7,13 @@
         <div>
           <div class="aboutus"><img src="../assets/img/friends.png"/> <span class="fs18 color-blue">关于我们</span></div>
 
-          <img src="../assets/img/aboutus.png" class="mt16"/>
+          <img src="../assets/img/aboutus.png" class="mt16 img-about"/>
           <p class="btntitle color-666 fs14 mt36">公司简介</p>
           <p class="btntitle color-666 fs14 mt16">公司优势</p>
 
           <div class="aboutus mt220"><img src="../assets/img/call.png"/> <span class="fs18 color-blue">联系我们</span></div>
 
-          <img src="../assets/img/contactus.png" class="mt16"/>
+          <img src="../assets/img/contactus.png" class="mt16 img-about"/>
 
         </div>
       </div>
@@ -88,7 +88,7 @@
           {location: '北京分部：', address: ' 北京市丰台区华夏幸福创新中心B座6层', baiduUrl: '../static/img/logo.png'},
           {location: '天津总部：', address: ' 天津市武清开发区创业总部基地B11号', baiduUrl: '../static/img/logo.png'}
         ],
-        contacts: ['微信/手机：18510501185', '微信/手机：18510501171','邮箱：qihiuwb@163.com']
+        contacts: ['微信/手机：18510501185', '微信/手机：18510501171', '邮箱：qihiuwb@163.com']
 
       }
     }
@@ -111,6 +111,11 @@
   .about .left{
     width:270px;
   }
+
+  .about .left .img-about{
+    width:90%;
+  }
+
   .about .right{
     width:730px;
   }

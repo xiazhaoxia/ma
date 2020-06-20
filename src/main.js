@@ -9,6 +9,7 @@ import About from './components/about'
 import Product from './components/product'
 import Solution from './components/solution'
 import News from './components/news'
+import 'lib-flexible'
 
 Vue.use(VueRouter)
 

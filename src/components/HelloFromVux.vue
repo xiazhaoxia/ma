@@ -227,6 +227,10 @@ export default {
     height: 392px;
     width:308px;
     cursor: pointer;
+    margin-right:10px;
+  }
+  #home .banner .product ul li img{
+    width:100%;
   }
   #home .middle-banner li{
     position: relative;
