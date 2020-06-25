@@ -16,11 +16,18 @@
           </tab>
 
         </div>
-        <swiper :show-dots="false"  auto  v-model="swiperItemIndex" >
-          <swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
-            <x-img :src="item.img" ></x-img>
-          </swiper-item>
-        </swiper>
+        <!--<swiper :show-dots="false"  auto  v-model="swiperItemIndex" >-->
+
+          <!--<swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">-->
+            <!--<x-img :src="item.img" ></x-img>-->
+          <!--</swiper-item>-->
+        <!--</swiper>-->
+
+        <li v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
+
+          <img :src="item.img" v-show="index==swiperItemIndex"></img>
+
+        </li>
 
 
         <!--<div class="tab">-->
@@ -177,9 +184,18 @@
     width:100%;
     height: auto;
   }
+
+  .myswiper img{
+    width:100%;
+  }
+
+  .myswiper .vux-tab-item{
+    cursor: pointer;
+  }
   .vux-swiper{
     height:720px !important;
   }
+
 
 
 </style>
