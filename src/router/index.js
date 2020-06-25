@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
-const router =  new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -21,9 +21,9 @@ const router =  new Router({
   }
 })
 router.beforeEach((to, from, next) => {
-    document.title = “天津启航物联科技有限公司”
-    debugger
-    next()
-  })
+  document.title = '天津启航物联科技有限公司'
+  debugger
+  next()
+})
 
 export default router

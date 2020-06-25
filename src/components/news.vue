@@ -85,10 +85,12 @@ export default{
     font-size: 12px;
     color: #666;
     text-align: left;
+    margin-right:10px;
 
 
   }
   .news .main .item span{
+    font-size: 14px;
     width: 200px;
     color: #666;
   }

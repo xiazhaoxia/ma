@@ -14,14 +14,23 @@ export default {
 @import '~vux/src/styles/reset.less';
 
 
+html{
+  font-size: 100px;
+
+}
 body {
   background-color: #fbf9fe;
 }
+
+
 .layout{
   width:1000px;
   margin:0 auto;
 }
 
+@media (min-width: 750px) {
+
+}
 
 
   .fs14{
@@ -107,7 +116,7 @@ h3{
   /*transform: translateX(-50%);*/
   /*z-index:99;*/
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 16px;
   position: fixed;
   top: 0;
   left: 0;
