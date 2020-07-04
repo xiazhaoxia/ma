@@ -220,6 +220,7 @@
     border-left: 3px solid #4b7fe5;
     line-height: 18px;
     font-size: 18px;
+    display: inherit;
   }
 
   #product .main .item .content{
