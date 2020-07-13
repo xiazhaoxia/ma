@@ -29,6 +29,18 @@
 
         </li>
 
+        <div v-if="pid==2">
+          <img src="@/assets/img/prison/prison001.png"/>
+          <img src="@/assets/img/prison/prison002.png"/>
+          <img src="@/assets/img/prison/prison003.png"/>
+          <img src="@/assets/img/prison/prison004.png"/>
+          <img src="@/assets/img/prison/prison005.png"/>
+          <img src="@/assets/img/prison/prison006.png"/>
+          <img src="@/assets/img/prison/prison007.png"/>
+
+        </div>
+
+
 
         <!--<div class="tab">-->
           <!--<x-button v-for="(item,index) in list" @click.native="swiperItemIndex = index">{{item.title}}</x-button>-->
