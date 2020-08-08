@@ -2,7 +2,7 @@
 
   <div class="solution pic" id="solution" :style="{backgroundImage:'url('+backurl+')'}">
     <CommonHeader></CommonHeader>
-    <div id="main" class="main layout">
+    <div class="main layout">
 
       <!--<li v-for="item in this.allsolutions">-->
       <!--{{item.title}}-->
@@ -23,7 +23,7 @@
       <div class="right">
         <li v-for="(item, index) in allsolutions" :key="index">
           <div class="split mb32">
-            <h2 class="pic-title">{{item.title}}</h2>
+            <div class="pic-title">{{item.title}}</div>
           </div>
           <div class="des mb32">
             {{item.des}}
@@ -208,10 +208,7 @@
     background-size: contain;
   }
 
-  #solution h2{
-    border-bottom: 2px solid #4e81e2;
-    display:inline-block;
-  }
+
   #solution .layout{
     display: flex;
     flex-direction: row;
@@ -249,6 +246,7 @@
 
   #solution .layout .right{
     width:820px;
+    text-align: left;
   }
   #solution .layout .right .des{
     font-size:14px;
@@ -264,6 +262,14 @@
 
   #solution .split{
     border-bottom:1px solid #4e81e2;
+    text-align: left;
+  }
+
+  #solution .pic-title{
+    border-bottom: 2px solid #4e81e2;
+    display: inline-block;
+    font-size: 18px;
+    color:#4e81e2;
   }
 
 
