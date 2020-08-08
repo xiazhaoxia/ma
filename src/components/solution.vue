@@ -1,53 +1,65 @@
 <template>
 
-  <div class="solution" id="solution">
+  <div class="solution pic" id="solution" :style="{backgroundImage:'url('+backurl+')'}">
     <CommonHeader></CommonHeader>
-    <div id="main" class="main">
+    <div id="main" class="main layout">
 
       <!--<li v-for="item in this.allsolutions">-->
-        <!--{{item.title}}-->
-        <!--<img :src="item.img"/>-->
+      <!--{{item.title}}-->
+      <!--<img :src="item.img"/>-->
       <!--</li>-->
-      <div class="myswiper">
-        <div  class="solution-tabbar">
 
-          <tab v-model="swiperItemIndex" class="solution-tab layout fs16 color-fff" bar-active-color="#fbaa34" active-color="#fbaa34">
-            <tab-item class="f" :selected="index==swiperItemIndex" v-for="(item, index) in allsolutions" @click="swiperItemIndex = index" :key="index">{{item.title}}</tab-item>
-          </tab>
-
+      <div  class="left">
+        <div class="page-title">解决方案</div>
+        <div class="page-tab">
+          <li v-for="(item,index) in tabs" :class="{selected:index+1==pid}">
+            <span @click="goSolutions(index+1)" >{{item}}</span>
+          </li>
         </div>
-        <!--<swiper :show-dots="false"  auto  v-model="swiperItemIndex" >-->
 
-          <!--<swiper-item v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">-->
-            <!--<x-img :src="item.img" ></x-img>-->
-          <!--</swiper-item>-->
-        <!--</swiper>-->
 
-        <li v-for="(item, index) in allsolutions" :key="index" class="swiper-demo-img">
+      </div>
 
-          <img :src="item.img" v-show="index==swiperItemIndex"></img>
-
+      <div class="right">
+        <li v-for="(item, index) in allsolutions" :key="index">
+          <div class="split mb32">
+            <h2 class="pic-title">{{item.title}}</h2>
+          </div>
+          <div class="des mb32">
+            {{item.des}}
+          </div>
+          <img :src="item.img" class="mb32"/>
         </li>
-
-        <div v-if="pid==2">
+        <div class="pic-more" v-if="pid==1">
+          <img src="@/assets/img/industry/industry001.png"/>
+          <img src="@/assets/img/industry/industry002.png"/>
+          <img src="@/assets/img/industry/industry003.png"/>
+          <img src="@/assets/img/industry/industry004.png"/>
+          <img src="@/assets/img/industry/industry005.png"/>
+        </div>
+        <div class="pic-more" v-if="pid==2">
           <img src="@/assets/img/prison/prison001.png"/>
           <img src="@/assets/img/prison/prison002.png"/>
           <img src="@/assets/img/prison/prison003.png"/>
           <img src="@/assets/img/prison/prison004.png"/>
           <img src="@/assets/img/prison/prison005.png"/>
           <img src="@/assets/img/prison/prison006.png"/>
-          <img src="@/assets/img/prison/prison007.png"/>
 
         </div>
-
-
-
-        <!--<div class="tab">-->
-          <!--<x-button v-for="(item,index) in list" @click.native="swiperItemIndex = index">{{item.title}}</x-button>-->
-        <!--</div>-->
+        <div class="pic-more" v-if="pid==3">
+          <img src="@/assets/img/tunnel/tunnel001.png"/>
+          <img src="@/assets/img/tunnel/tunnel002.png"/>
+          <img src="@/assets/img/tunnel/tunnel003.png"/>
+          <img src="@/assets/img/tunnel/tunnel004.png"/>
+          <img src="@/assets/img/tunnel/tunnel005.png"/>
+          <img src="@/assets/img/tunnel/tunnel006.png"/>
+        </div>
       </div>
 
+
+
     </div>
+
 
     <CommonFooter></CommonFooter>
   </div>
@@ -76,11 +88,18 @@
       return {
         msg: '解决方案',
         swiperItemIndex: 1,
-        pid: 1
+        pid: 1,
+        tabs: ['智慧工业', '智慧狱所', '矿井隧道'],
+        urls: ['/static/img/industry_banner.png', '/static/img/prison_banner.png', '/static/img/tunnel_banner.png']
       }
     },
     mounted () {
       this.pid = this.$route.params.id
+    },
+    methods: {
+      goSolutions (id) {
+        this.$router.push(`/solution/${id}`)
+      }
     },
     beforeRouteUpdate (to, from, next) {
       console.log('****************Test1*******Update***********')
@@ -94,72 +113,78 @@
       next()
     },
     computed: {
+      backurl () {
+        return this.urls[this.pid - 1]
+      },
       allsolutions: function () {
         let pages = []
         // 智慧工工厂
         let gongchang = [{
           url: 'javascript:',
           img: '../static/img/industry_a.jpg',
-          title: '定位方案'
+          title: '定位方式',
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/industry_b.jpg',
           title: '系统架构',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/industry_c.jpg',
           title: '网络部署',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/industry_d.jpg',
           title: '软件功能',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: '定位方式的优势'
         }]
 
         // 智慧狱所
         let yusuo = [{
           url: 'javascript:',
           img: '../static/img/prison_a.jpg',
-          title: '定位方案'
+          title: '定位方式',
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/prison_b.jpg',
           title: '系统架构',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/prison_c.jpg',
           title: '网络部署',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: '定位方式的优势'
         }, {
           url: 'javascript:',
           img: '../static/img/prison_d.jpg',
           title: '软件功能',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: ''
         }]
 
         // 隧道
         let suidao = [{
           url: 'javascript:',
           img: '../static/img/tunnel_a.jpg',
-          title: '定位方案'
+          title: '定位方式',
+          des: ''
         }, {
           url: 'javascript:',
           img: '../static/img/tunnel_b.jpg',
           title: '系统架构',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: ''
         }, {
           url: 'javascript:',
           img: '../static/img/tunnel_c.jpg',
           title: '网络部署',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: ''
         }, {
           url: 'javascript:',
           img: '../static/img/tunnel_d.jpg',
           title: '软件功能',
-          fallbackImg: 'https://static.vux.li/demo/3.jpg'
+          des: ''
         }]
 
         pages.push(gongchang)
@@ -174,39 +199,74 @@
 </script>
 
 
-<style>
-
-  .tabActive{
-    background-color: #fbaa34;
+<style >
+  #solution .head{
+    min-height: 220px;
+  }
+  .pic{
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  #solution header{
-    display:none;
+  #solution h2{
+    border-bottom: 2px solid #4e81e2;
+    display:inline-block;
+  }
+  #solution .layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  #solution .layout .left .page-title{
+    width:150px;
+    height:30px;
+    background-color: #dedede;
+    font-size:18px;
+    color:#333;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-left:10px;
   }
 
-  #solution .main{
-    margin:60px auto 0;
+  #solution .layout .left .page-tab{
+    margin-top:20px;
+  }
+  #solution .layout .left .page-tab li{
+    font-size:14px;
+    color:#666;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-left:10px;
+
   }
 
-  .solution .footer{
-    margin-top:0;
+  #solution .layout .left .page-tab li.selected{
+    color:#4e81e2;
+    border-left:2px solid #4e81e2;
   }
 
-  .myswiper{
+  #solution .layout .right{
+    width:820px;
+  }
+  #solution .layout .right .des{
+    font-size:14px;
+    color:#666;
+  }
+  #solution .layout .right img{
     width:100%;
-    height: auto;
   }
 
-  .myswiper img{
-    width:100%;
+  #solution .layout .right .pic-more img{
+    margin-top:32px;
   }
 
-  .myswiper .vux-tab-item{
-    cursor: pointer;
+  #solution .split{
+    border-bottom:1px solid #4e81e2;
   }
-  .vux-swiper{
-    height:720px !important;
-  }
+
+
 
 
 

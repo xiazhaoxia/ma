@@ -14,6 +14,7 @@ export default {
 @import '~vux/src/styles/reset.less';
 
 
+
 html{
   font-size: 100px;
 
@@ -31,6 +32,8 @@ body {
 @media (min-width: 750px) {
 
 }
+
+
 
 
   .fs14{
@@ -67,6 +70,13 @@ body {
   }
   .mt30{
     margin-top: 30px;
+  }
+
+  .mt32{
+    margin-top:32px;
+  }
+  .mb32{
+    margin-bottom: 32px;
   }
 
   .colorFF{
